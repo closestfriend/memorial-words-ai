@@ -1,0 +1,19 @@
+{
+  "name": "memorial-words-ai",
+  "version": "1.0.0",
+  "description": "AI-powered eulogy generator using Claude API - A compassionate tool for honoring memories",
+  "main": "index.html",
+  "scripts": {
+    "dev": "netlify dev",
+    "build": "echo 'No build needed for static site'"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.24.3"
+  },
+  "devDependencies": {
+    "netlify-cli": "^17.0.0"
+  },
+  "keywords": ["ai", "eulogy", "memorial", "claude", "anthropic"],
+  "author": "Hunter Noah Karman",
+  "license": "MIT"
+}
