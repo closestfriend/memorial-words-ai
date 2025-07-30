@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memorial Words - AI Eulogy Generator</title>
+    <meta name="description" content="Honor their memory with heartfelt words - AI-powered eulogy generator">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Memorial Words</h1>
+            <p>Honor their memory with heartfelt words</p>
+        </header>
+
+        <main>
+            <form id="eulogyForm" class="eulogy-form">
+                <div class="form-group">
+                    <label for="personName">Their Name</label>
+                    <input type="text" id="personName" required placeholder="John Smith">
+                </div>
+
+                <div class="form-group">
+                    <label for="relationship">Your Relationship</label>
+                    <select id="relationship" required>
+                        <option value="">Select relationship</option>
+                        <option value="son">Son</option>
+                        <option value="daughter">Daughter</option>
+                        <option value="spouse">Spouse</option>
+                        <option value="partner">Partner</option>
+                        <option value="friend">Friend</option>
+                        <option value="colleague">Colleague</option>
+                        <option value="grandchild">Grandchild</option>
+                        <option value="sibling">Sibling</option>
+                        <option value="parent">Parent</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="memories">Special Memories & Qualities</label>
+                    <textarea id="memories" required placeholder="Share what made them special - their hobbies, values, funny stories, how they touched your life..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="tone">Tone</label>
+                    <select id="tone">
+                        <option value="warm">Warm & Celebrating</option>
+                        <option value="reflective">Reflective & Peaceful</option>
+                        <option value="uplifting">Uplifting & Hopeful</option>
+                        <option value="personal">Personal & Intimate</option>
+                    </select>
+                </div>
+
+                <button type="submit" id="generateBtn">
+                    <span class="btn-text">Generate Eulogy</span>
+                    <span class="loading" style="display: none;">Crafting words...</span>
+                </button>
+            </form>
+
+            <div id="result" class="result-section" style="display: none;">
+                <h3>Your Eulogy</h3>
+                <div id="eulogyText" class="eulogy-text"></div>
+                <div class="result-actions">
+                    <button id="copyBtn">Copy to Clipboard</button>
+                    <button id="regenerateBtn">Generate Another Version</button>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Created with compassion and AI technology</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
